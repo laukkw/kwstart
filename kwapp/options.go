@@ -2,7 +2,7 @@
 // Use of this source code is governed by a MIT style
 // license that can be found in the LICENSE file.
 
-package app
+package kwapp
 
 import (
 	cliflag "github.com/marmotedu/component-base/pkg/cli/flag"
