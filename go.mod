@@ -5,6 +5,7 @@ go 1.17
 require (
 	github.com/fatih/color v1.10.0
 	github.com/gosuri/uitable v0.0.4
+	github.com/json-iterator/go v1.1.11
 	github.com/marmotedu/component-base v1.0.1
 	github.com/marmotedu/errors v1.0.2
 	github.com/sirupsen/logrus v1.8.1
@@ -26,7 +27,6 @@ require (
 	github.com/inconshreveable/mousetrap v1.0.0 // indirect
 	github.com/jinzhu/inflection v1.0.0 // indirect
 	github.com/jinzhu/now v1.1.2 // indirect
-	github.com/json-iterator/go v1.1.11 // indirect
 	github.com/magiconair/properties v1.8.5 // indirect
 	github.com/marmotedu/log v0.0.1 // indirect
 	github.com/mattn/go-colorable v0.1.8 // indirect
