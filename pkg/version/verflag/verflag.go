@@ -1,3 +1,8 @@
+// Use of this source code is governed by a MIT style
+// license that can be found in the LICENSE file.
+
+// Package verflag defines utility functions to handle command line flags
+// related to version of IAM.
 package verflag
 
 import (
@@ -7,7 +12,7 @@ import (
 
 	flag "github.com/spf13/pflag"
 
-	"github.com/rzry/kwstart/version"
+	"github.com/rzry/kwstart/pkg/version"
 )
 
 type versionValue int
