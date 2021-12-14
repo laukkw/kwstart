@@ -82,7 +82,7 @@ func loadConfig(cfg string, defaultName string) {
 	// Use config file from the flag.
 	viper.SetConfigType("yaml")              // set the type of the configuration to yaml.
 	viper.AutomaticEnv()                     // read in environment variables that match.
-	viper.SetEnvPrefix(RecommendedEnvPrefix) // set ENVIRONMENT variables prefix to IAM.
+	viper.SetEnvPrefix(RecommendedEnvPrefix) // set ENVIRONMENT variables prefix to server.
 	viper.SetEnvKeyReplacer(strings.NewReplacer(".", "_", "-", "_"))
 
 	// If a config file is found, read it in.

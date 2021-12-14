@@ -295,8 +295,8 @@ linters-settings:
       modules:
         - github.com/pkg/errors:
             recommendations:
-              - github.com/marmotedu/errors
-            reason: "`github.com/marmotedu/errors` is the log package used by marmotedu projects."
+              - github.com/rzry/kwstart/errors
+            reason: "`github.com/rzry/kwstart/errors` is the log package used by kwstart projects."
       versions:
         - github.com/MakeNowJust/heredoc:
             version: "> 2.0.9"

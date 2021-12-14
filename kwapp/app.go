@@ -5,7 +5,7 @@ import (
     "os"
     
     "github.com/fatih/color"
-    "github.com/marmotedu/errors"
+    "github.com/rzry/kwstart/errors"
     cliflag "github.com/rzry/kwstart/pkg/cli/flag"
     "github.com/rzry/kwstart/pkg/cli/globalflag"
     "github.com/rzry/kwstart/pkg/term"
