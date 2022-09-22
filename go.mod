@@ -1,4 +1,4 @@
-module github.com/rzry/kwstart
+module github.com/laukkw/kwstart
 
 go 1.17
 

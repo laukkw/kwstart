@@ -3,7 +3,7 @@
 
 package fields
 
-import "github.com/rzry/kwstart/pkg/selection"
+import "github.com/laukkw/kwstart/pkg/selection"
 
 // Requirements is AND of all requirements.
 type Requirements []Requirement

@@ -6,7 +6,7 @@ package runtime
 import (
 	"fmt"
 
-	"github.com/rzry/kwstart/pkg/json"
+	"github.com/laukkw/kwstart/pkg/json"
 )
 
 // NegotiateError is returned when a ClientNegotiator is unable to locate

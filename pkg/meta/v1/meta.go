@@ -4,13 +4,13 @@
 package v1
 
 import (
-    "time"
-    
-    "github.com/rzry/kwstart/pkg/scheme"
+	"time"
+
+	"github.com/laukkw/kwstart/pkg/scheme"
 )
 
 type ObjectMetaAccessor interface {
-    GetObjectMeta() Object
+	GetObjectMeta() Object
 }
 
 // Object lets you work with object metadata from any of the versioned or
@@ -18,30 +18,30 @@ type ObjectMetaAccessor interface {
 // not support that field (Name, UID, Namespace on lists) will be a no-op and return
 // a default value.
 type Object interface {
-    GetID() uint64
-    SetID(id uint64)
-    GetName() string
-    SetName(name string)
-    GetCreatedAt() time.Time
-    SetCreatedAt(createdAt time.Time)
-    GetUpdatedAt() time.Time
-    SetUpdatedAt(updatedAt time.Time)
+	GetID() uint64
+	SetID(id uint64)
+	GetName() string
+	SetName(name string)
+	GetCreatedAt() time.Time
+	SetCreatedAt(createdAt time.Time)
+	GetUpdatedAt() time.Time
+	SetUpdatedAt(updatedAt time.Time)
 }
 
 // ListInterface lets you work with list metadata from any of the versioned or
 // internal API objects. Attempting to set or retrieve a field on an object that does
 // not support that field will be a no-op and return a default value.
 type ListInterface interface {
-    GetTotalCount() int64
-    SetTotalCount(count int64)
+	GetTotalCount() int64
+	SetTotalCount(count int64)
 }
 
 // Type exposes the type and APIVersion of versioned or internal API objects.
 type Type interface {
-    GetAPIVersion() string
-    SetAPIVersion(version string)
-    GetKind() string
-    SetKind(kind string)
+	GetAPIVersion() string
+	SetAPIVersion(version string)
+	GetKind() string
+	SetKind(kind string)
 }
 
 var _ ListInterface = &ListMeta{}
@@ -55,12 +55,12 @@ func (obj *TypeMeta) GetObjectKind() scheme.ObjectKind { return obj }
 
 // SetGroupVersionKind satisfies the ObjectKind interface for all objects that embed TypeMeta.
 func (obj *TypeMeta) SetGroupVersionKind(gvk scheme.GroupVersionKind) {
-    obj.APIVersion, obj.Kind = gvk.ToAPIVersionAndKind()
+	obj.APIVersion, obj.Kind = gvk.ToAPIVersionAndKind()
 }
 
 // GroupVersionKind satisfies the ObjectKind interface for all objects that embed TypeMeta.
 func (obj *TypeMeta) GroupVersionKind() scheme.GroupVersionKind {
-    return scheme.FromAPIVersionAndKind(obj.APIVersion, obj.Kind)
+	return scheme.FromAPIVersionAndKind(obj.APIVersion, obj.Kind)
 }
 
 func (meta *TypeMeta) GetAPIVersion() string        { return meta.APIVersion }

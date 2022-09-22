@@ -9,7 +9,7 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/rzry/kwstart/pkg/selection"
+	"github.com/laukkw/kwstart/pkg/selection"
 )
 
 // Selector represents a field selector.

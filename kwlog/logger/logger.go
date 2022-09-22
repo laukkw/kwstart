@@ -11,7 +11,7 @@ import (
 
 	gormlogger "gorm.io/gorm/logger"
 
-	log "github.com/rzry/kwstart/kwlog"
+	log "github.com/laukkw/kwstart/kwlog"
 )
 
 // Define colors.

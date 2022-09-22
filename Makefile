@@ -1,5 +1,5 @@
 GO := go
-ROOT_PACKAGE := github.com/rzry/kwstart
+ROOT_PACKAGE := github.com/laukkw/kwstart
 ifeq ($(origin ROOT_DIR),undefined)
 ROOT_DIR := $(shell pwd)
 endif

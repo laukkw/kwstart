@@ -28,7 +28,7 @@ import (
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
 
-	"github.com/rzry/kwstart/kwlog/klog"
+	"github.com/laukkw/kwstart/kwlog/klog"
 )
 
 // InfoLogger represents the ability to kwlog non-error messages, at a particular verbosity.

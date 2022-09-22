@@ -7,7 +7,7 @@ import (
 	goflag "flag"
 	"strings"
 
-	log "github.com/rzry/kwstart/kwlog"
+	log "github.com/laukkw/kwstart/kwlog"
 	"github.com/spf13/pflag"
 )
 

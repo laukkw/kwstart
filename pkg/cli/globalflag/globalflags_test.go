@@ -13,7 +13,7 @@ import (
 
 	"github.com/spf13/pflag"
 
-	cliflag "github.com/rzry/kwstart/pkg/cli/flag"
+	cliflag "github.com/laukkw/kwstart/pkg/cli/flag"
 )
 
 func TestAddGlobalFlags(t *testing.T) {

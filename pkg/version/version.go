@@ -11,7 +11,7 @@ import (
 
 	"github.com/gosuri/uitable"
 
-	"github.com/rzry/kwstart/pkg/json"
+	"github.com/laukkw/kwstart/pkg/json"
 )
 
 var (
