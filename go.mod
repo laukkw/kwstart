@@ -5,13 +5,16 @@ go 1.17
 require (
 	github.com/asaskevich/govalidator v0.0.0-20210307081110-f21760c49a8d
 	github.com/bitly/go-simplejson v0.5.0
+	github.com/buger/jsonparser v1.1.1
 	github.com/dgrijalva/jwt-go v3.2.0+incompatible
 	github.com/fatih/color v1.10.0
 	github.com/gin-gonic/gin v1.7.7
+	github.com/go-redis/redis/v7 v7.4.1
 	github.com/gosuri/uitable v0.0.4
 	github.com/h2non/filetype v1.1.1
 	github.com/json-iterator/go v1.1.11
 	github.com/moby/term v0.0.0-20201216013528-df9cb8a40635
+	github.com/satori/go.uuid v1.2.0
 	github.com/sirupsen/logrus v1.8.1
 	github.com/sony/sonyflake v1.0.0
 	github.com/speps/go-hashids v2.0.0+incompatible
