@@ -28,6 +28,9 @@ type ErrResponse struct {
 // errors.Coder contains error code, user-safe error message and http status code.
 func WriteResponse(c *gin.Context, err error, data interface{}) {
     if err != nil {
+		if data == nil{
+			data = ""
+		}
         log.Errorf("%#+v", err)
         coder := errors.ParseCoder(err)
         c.JSON(coder.HTTPStatus(), ErrResponse{
